@@ -75,7 +75,7 @@ class Filme
     }
 
     getBtnDetalhes=()=>{
-        return this.btnDetalhes
+        return this.btnDetalhes;
     }
 }      
 
