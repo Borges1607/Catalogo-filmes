@@ -71,5 +71,8 @@ let detalhesFilme = async (id) => {
         document.querySelector("#lista-filmes").style.display="none";
         document.querySelector("#mostrar-filme").style.display="flex";
     });
-}  
+}
 
+function fecharBotao(){
+    mostrarFilme.style.display = "none";
+} 
