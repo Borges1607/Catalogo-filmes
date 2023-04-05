@@ -1,59 +1,193 @@
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;    
     box-sizing: border-box;
 }
 
-#lista-filmes{
-    display:flex;
+body{
+    overflow-x: auto;
+}
+
+#logo{
+    width: 3rem;
+    height: 2.8rem;
+}
+
+#input-buscar-filme{
+    width: 75%;
+}
+
+#listar-filmes{
+    display: flex;
     justify-content: start;
     flex-wrap: wrap;
     padding: 2rem;
 }
 
-#imglogo{
-    width: 35%;
+.navbar-brand{
+    font-family: 'Oswald', sans-serif;
+}
+
+.card-img-topz{
+    width: 18rem;
+    height: 30rem;
+    border-radius: 0.25rem;
 }
 
 .card{
+    width: 18rem;
+    height: 39rem;
     margin: 1rem;
-    width: 250px;
-    height: 500px;
+}
+
+.card:hover{
+    width: 18rem;
+    height: 39rem;
+    margin: 1rem;
+    background-color: white;
+    transition: background-color .15s ease-in-out;
+}
+
+.card-title{
+    font-family: 'Staatliches', cursive;
+}
+
+.btnDetalhesFilme{
+    margin-top: 0.7rem;
+    margin-left: 5.4rem;
+    color: #00cc6d;
+    background-color: transparent;
+    border-color: #00cc6d;
+    border: 1px solid #00cc6d;
+    font-size: 1rem;
+    padding: 0.335rem 2rem;
+    font-size: 1rem;
+    border-radius: 1.3rem;
+    transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+}
+
+.btnDetalhesFilme:hover{
+    border-color: transparent;
+    color: white;
+    background-color: #00cc6d;
+}
+
+#div-fechar{
+    float: left;
+}
+
+#div-salvar{
+    float: left;
+}
+#btn-fechar{
+    float: left;
     display: flex;
+    margin-top: 2.5rem;
+    margin-left: 70rem;
+    font-weight: 500;
+    color: #ff0000;
+    background-color: transparent;
+    border-color: #ff0000;
+    border: 1px solid #ff0000;
+    font-size: 1rem;
+    padding: 0.335rem 2rem;
+    border-radius: 1.3rem;
+    transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+}
+
+#btn-fechar:hover{
+    border-color: transparent;
+    color: white;
+    background-color: #ff0000;
+}
+
+#btn-salvar{
+    float: left;
+    display: flex;
+    margin-top: 1.7rem;
+    margin-left: -70.5rem;
+    color: #00cc6d;
+    font-weight: 500;
+    background-color: transparent;
+    border-color: #00cc6d;
+    border: 1px solid #00cc6d;
+    font-size: 1rem;
+    padding: 0.335rem 5.7rem;
+    border-radius: 1.3rem;
+    transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+}
+
+#btn-salvar:hover{
+    border-color: transparent;
+    color: white;
+    background-color: #00cc6d;
+}
+
+#btn-salvar:active{
+    background-color: #00cc6d;
+}
+
+#div-detalhes-card{
+    float: left;
+    margin-top: -29rem;
+    margin-left: 22rem;
+    background-color: white;
+    border-radius: 0.3rem;
+    line-height: 3rem;
+}
+
+#btn-excluir:hover{
+    border-color: transparent;
+    color: white;
+    background-color: #00cc6d;
+}
+
+#btn-excluir{
+    float: left;
+    display: flex;
+    margin-top: 4.5rem;
+    margin-left: -70.5rem;
+    color: #00cc6d;
+    font-weight: 500;
+    background-color: transparent;
+    border-color: #00cc6d;
+    border: 1px solid #00cc6d;
+    font-size: 1rem;
+    padding: 0.335rem 5rem;
+    border-radius: 1.3rem;
+    transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+}
+
+
+
+#btn-excluir:active{
+    background-color: #00cc6d;
 }
 
 #mostrar-filme{
-    display: none;
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    top: 10vw;
-    left : 35vw;
-    border-radius: 3vw;
-    padding: 2vw;
-    z-index: 1;
+    display: flex;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    font-weight: 500;
+    text-shadow: 0rem 0rem 0.5rem 0rem rgb(82, 79, 79);
 }
 
-.poster-detalhes{
-    width: 250px;
-    height: 400px;
-    border-radius: 3vw;
-    top: -3vw;
-    left: -20vw;
-}
-
-.container-fluid{
-    background-color: blueviolet;
-}
-
-#btn-buscar-filme{
-    border-color:white ;
-    color: white;
-}
-
-.card img{
-    object-fit:cover;
-    max-width: 50vh;
-    height: 22rem;
+#imagem-detalhes{
+    width: 20.63rem;
+    height: 30rem;
+    border-radius: 0.25rem;
+    box-shadow: 0rem 0rem 0.5rem 0rem rgb(82, 79, 79);
 }
